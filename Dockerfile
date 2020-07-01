@@ -5,8 +5,8 @@ FROM gobuffalo/buffalo:v0.16.10 as builder
 ENV GO111MODULE on
 ENV GOPROXY http://proxy.golang.org
 
-RUN mkdir -p /src/Projects
-WORKDIR /src/Projects
+RUN mkdir -p /src/github.com/edsonvitor42/hello-world-golang-api
+WORKDIR /src/github.com/edsonvitor42/hello-world-golang-api
 
 # Copy the Go Modules manifests
 COPY go.mod go.mod
